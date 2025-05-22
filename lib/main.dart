@@ -5,22 +5,18 @@ import 'package:flash_chat_flutter/screens/registration_screen.dart';
 import 'package:flash_chat_flutter/screens/chat_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    options: FirebaseOptions(
-    apiKey: 'AIzaSyDsZnNJHjMvozq4LRt8jAZfCNBdztngLCA',
-    appId: '1:297117109657:android:82a9c4d6a3fa997adb5708',
-    messagingSenderId: '297117109657',
-    projectId: 'flash-chat-8842f',
-    storageBucket: 'flash-chat-8842f.appspot.com',
-  )
-  );
+      options: FirebaseOptions(
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
+  ));
 
   runApp(FlashChat());
-
 }
 
 class FlashChat extends StatelessWidget {
